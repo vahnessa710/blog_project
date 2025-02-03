@@ -15,32 +15,75 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
-  .add-icon-container {
+
+  .main-add-icon-container {
+    margin-top: 10px;
     background-color: #4CAF50;
     color: white;
-    padding: 6px;
+    padding: 7px;
     border-radius: 15px;
     margin-bottom: 25px;
     width: 5%;
     text-align: center;
     font-size: 25px;
   }
-  .add-icon-container:hover{
+  .main-add-icon-container:hover{
     background-color: hsl(122, 39%, 39%);
   }
+  
+  .edit-icon-container {
+    color: hsl(122, 39%, 39%);
+    padding: 4px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    width: 5%;
+    text-align: center;
+    font-size: 25px;
+  }
+  .edit-icon-container:hover{
+    color: hsl(122, 39%, 29%);
+  }
+
+  .back-button,
+  .edit-button,
+  .delete-button {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+    margin-top: 20px;
+    display: inline-block;
+    
+    background-color: #f8f9fa;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .delete-button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+  }
+  
+  .delete-button:hover {
+    background-color: #c0392b;
+  }
+
+  .back-button:hover
+  {
+    color: hsl(211, 100%, 50%);
+  }
+  .edit-button:hover{
+
+  }
+  
+
   .blog-posts {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
     padding: 40px;
-  }
-  
-  header {
-    color: white;
-    padding: 1rem;
-    text-align: center;
   }
   
   h1 {
@@ -50,7 +93,8 @@
   
 
   h2 {
-    font-size: 1rem;
+    font-size: 1.7rem;
+    margin-top: 10px;
     margin-bottom: 10px;
   }
   
@@ -68,6 +112,7 @@
     color: #3498db;
     font-weight: bold;
     padding: 5px 10px;
+    font-size: 18px;
   }
   
   .title:hover {
