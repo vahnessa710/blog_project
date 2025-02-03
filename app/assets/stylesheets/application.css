@@ -14,21 +14,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #F9F9F9;
   }
-
-  .main-add-icon-container {
+.alert-msg{
+  text-align: center;
+  font-size: 1rem;
+}
+.main-add-icon-container{
+  width: 8%;
+}
+  .main-add-icon{
     margin-top: 10px;
     background-color: #4CAF50;
-    color: white;
     padding: 7px;
     border-radius: 15px;
     margin-bottom: 25px;
-    width: 5%;
+    width: 7%;
     text-align: center;
     font-size: 25px;
+    padding: 8px;display: flex;
+    justify-content: center;
+    color: white;
+    width: 100px;
   }
-  .main-add-icon-container:hover{
+
+  .main-add-icon:hover{
     background-color: hsl(122, 39%, 39%);
+    transition: background-color 0.3s, color 0.3s;
   }
   
   .edit-icon-container {
@@ -69,12 +81,10 @@
     background-color: #c0392b;
   }
 
-  .back-button:hover
-  {
+  .back-button:hover{
     color: hsl(211, 100%, 50%);
   }
   
-
   .blog-posts {
     display: flex;
     flex-direction: column;
@@ -89,7 +99,6 @@
     font-size: 2rem;
     margin-bottom: 15px;
   }
-  
 
   h2 {
     font-size: 1.7rem;
@@ -193,7 +202,10 @@
     width: 100%;
     bottom: 0;
   }
-  
+  .login-blogger{
+    color: #007bff;
+    font-size: 3rem;
+  }
   .login-form-container{
     display: flex;
     justify-content: center;
@@ -203,9 +215,8 @@
   }
 
   .form-container{
-    display: flex;
     justify-content: center;
-    width: 100%;
+    width: 35%;
   }
 
   /* Field Styles */
@@ -269,7 +280,7 @@
     text-decoration: none;
   }
   
-  .devise-links a {
+  .devise-links a{
     color: #007bff;
     text-decoration: none;
   }
@@ -282,3 +293,6 @@
     outline:none;
   }
 
+a{
+  text-decoration: none;
+}

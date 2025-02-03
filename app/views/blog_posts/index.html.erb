@@ -1,9 +1,10 @@
 <h1>What's on your mind?</h1>
 
-<%= link_to new_blog_post_path do %>
-   <i class="fa-solid fa-circle-plus main-add-icon-container"></i>
-<% end %>
-
+<div class = "main-add-icon-container">
+    <%= link_to new_blog_post_path do %>
+    <span><i class="fa-solid fa-circle-plus main-add-icon"></i></span>
+    <% end %>
+</div>
 
 <% @blog_posts.reverse.each do |blog_post| %>
     
