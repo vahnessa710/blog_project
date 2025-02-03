@@ -1,0 +1,23 @@
+<%= form_with model: @blog_post do |form| %>
+    <% if form.object.errors.any? %>
+        <div class = "form">
+            <% form.object.errors.full_messages.each do |message| %>
+            <div><%= message %></div>    
+            <% end %>
+        </div>
+    <% end %>
+
+    <div class = "form">
+        <%= form.label :title  %>
+        <%= form.text_field :title %>
+    </div>
+
+    <div class = "form">    
+        <%= form.label :body %>
+        <%= form.text_area :body %>
+    </div>
+
+    <div>
+    <%= form.submit "Create Post", class: "create-button" %>
+    </div>
+<% end %>

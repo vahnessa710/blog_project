@@ -1,0 +1,13 @@
+<%= link_to "Back to Posts", root_path %>
+
+<h2><%= @blog_post.title %></h2>
+<div class="post">
+  <%= @blog_post.body %>
+</div>
+
+<%= link_to "Edit", user_signed_in? ? edit_blog_post_path(@blog_post) : new_user_session_path %>
+
+<%= button_to "Delete", 
+            user_signed_in? ? @blog_post : new_user_session_path, 
+            method: user_signed_in? ? :delete : nil, 
+            data: { confirm: "Are you sure you want to delete this post?" } %>

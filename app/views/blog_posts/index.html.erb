@@ -1,0 +1,17 @@
+<h1>What's on your mind?</h1>
+<%= link_to new_blog_post_path do %>
+
+    <span class="material-symbols-outlined add-icon-container">add_circle</span>
+<% end %>
+
+
+<% @blog_posts.each do |blog_post| %>
+    
+    <h2><%= link_to blog_post.title, blog_post, class: "title" %></h2>
+    <div class="post">
+    <%= blog_post.body %> 
+    <span class="post-date-time"> 
+        <%= blog_post.created_at.in_time_zone(Time.zone.name).strftime("%m-%d-%y %I:%M")%>
+    </span>
+    </div>
+<% end %>
